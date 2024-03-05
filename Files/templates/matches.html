@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches</title>
+</head>
+<body>
+    <h1>Matches found</h1>
+    <ul>
+        {% for match in matches %}
+            <li>{{ match }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><strong>Test String: </strong> {{ test_string }}</p>
+    <p><strong>Regex Pattern: </strong> {{ regex_pattern }}</p>
+    <p><strong>{{ num_matches }} </strong> matches found.</p>
+    <p><strong>Matched words: </strong> 
+        <ul>
+            {% for word in matched_words %}
+                <li>{{ word }}</li>
+            {% endfor %}
+        </ul>
+    
+    </p>
+    <a href="/">Go back</a>
+</body>
+</html>

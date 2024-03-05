@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Matcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2d0892;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF6347
+        }
+
+        form {
+            max-width: 600px;
+            margin:0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type='text'],
+        input[type='email'],
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type='submit'] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%
+        }
+
+        input[type='submit']:hover {
+            background-color: #45a049
+        }
+    </style>
+</head>
+<body>
+    <h1>Regex Matcher</h1>
+    <p><em>Welcome to Regex Matcher!</em></p><br>
+    <p><em>This web application helps you find specific patterns in the text you input by using regular expressions.</em></p>
+
+
+    <form action="\match" method = 'POST'>
+        <label for="test_string">Text to Search:</label><br>
+        <textarea name="test_string" rows="4" cols="50"></textarea><br>
+        <label for="regex_pattern">Pattern:</label><br>
+        <input type="text" name="regex_pattern"><br>
+        <input type="submit" value="Match">
+    </form>
+    <br>
+    <h2>Email Validation</h2>
+    <p style="text-align: center;"><em>Are you sure your email address is valid?</em></p>
+    
+    <form action="/validate-email" method="POST">
+        <label for="email">Email Address</label><br>
+        <input type="email" name="email"><br>
+        <input type="submit" value="Validate Email">
+
+    </form>
+</body>
+</html>
