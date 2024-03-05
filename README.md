@@ -15,7 +15,7 @@ Regular expression (RegEx) matching is a method of searching, finding, and manip
 
 In this project my job is to replicate the core functionality of the regex101 [website](regex101.com). This entails creating a web application that allows users to input a test string and a regular expression (regex) and displays all the matches found.
 
-🔗You can access the Regex matcher web app [here](http://3.84.231.245:5000/).
+🔗You can try out the Regex matcher web app I created [here](http://3.84.231.245:5000/).
 
 # Steps:
 
@@ -44,5 +44,12 @@ In this project my job is to replicate the core functionality of the regex101 [w
 - HTML
 - CSS
 
+## Output
 
+<p align="center">
+    <img width="800" src="https://github.com/HannahIgboke/Regex-Matching-Web-App-Development/blob/main/Files/Images/Regex%20matcher.JPG" alt="Regex matcher">
+</p>
 
+<p align="center">
+    <img width="800" src="https://github.com/HannahIgboke/Regex-Matching-Web-App-Development/blob/main/Files/Images/Second%20output.JPG" alt="Output">
+</p>
